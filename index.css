@@ -5,7 +5,7 @@
 }
 
 body{ 
-    background-color: rgb(61, 60, 60);
+    background-color: black;
     background-repeat: no-repeat;
     background-size: 100%;
     opacity: 1.6;
@@ -13,8 +13,14 @@ body{
     padding: 0px;
     width: 100vw;
     overflow-x: hidden;
-
 }
+.day{
+    background-color: rgba(219, 210, 199,0.7);
+}
+.night{
+    background-color: black;
+}
+
 
 /* creating a toggle button for day or night */
 .toggle {
@@ -71,7 +77,7 @@ body{
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: cyan;
+    background-color: orange;
     transition: .4s;
     border-radius: 50%;
 }
@@ -98,14 +104,14 @@ input:checked + .slider:before {
     padding:10px;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid cyan ;
+    border: 2px solid orange ;
     box-shadow: 0px 0px 5px 3px transparent;
     border-radius: 999px;
     /* background-color: black; */
     backdrop-filter: blur(10px);
 }
 .navigation-bar:hover{
-    box-shadow: 0px 0px 5px 7px cyan;
+    box-shadow: 0px 0px 5px 7px orange;
 
 }
 .navigation-bar > a{
@@ -119,7 +125,7 @@ input:checked + .slider:before {
 }
 .navigation-bar  a:hover{
     transform: scale(1.2);
-    color: cyan;
+    color: orange;
 }
 
 
@@ -146,7 +152,7 @@ input:checked + .slider:before {
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    border: 3px solid black ;
+    border: 3px solid orange ;
     border-radius: 10px;
     /* transition-delay: 0.5s; */
     backdrop-filter: blur(5px);
@@ -156,7 +162,7 @@ input:checked + .slider:before {
 }
 
 .Introduction:hover{
-    box-shadow: 0px 0px 10px 5px black;
+    box-shadow: 0px 0px 10px 5px orange;
     transform: scale(1.3);
 }
 
@@ -164,7 +170,7 @@ input:checked + .slider:before {
     padding: 10px;
     font-size: x-large;
     margin: 5px;
-    color: cyan;
+    color: orange;
     /* font-style: italic; */
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -235,7 +241,7 @@ input:checked + .slider:before {
     scale: 0.6;
     z-index: 0;
     position: relative;
-    border: 0.5px solid black;
+    border: 0.5px solid orange;
     animation: movement 2s infinite linear;
     /* box-shadow: 5px 5px 5px 10px black ; */
     /* left: 100px; */
@@ -246,10 +252,10 @@ input:checked + .slider:before {
 }
 .front-page .dp:hover{
     z-index: 1;
-    border: 1px solid black;
+    border: 1px solid orange;
     transform: scale(1.5);
     background-image: transparent;
-    filter: saturate(6);
+    filter: saturate(1);
 }
 
 
@@ -266,40 +272,39 @@ input:checked + .slider:before {
     margin-top: 0px;
     width: 100vw;
     height: 100%;
-    background-color: black; 
     overflow: hidden;
 }
 
 .second-page > .header{
-    color: cyan;
+    color: orange;
     text-align: center;
     font-weight: bolder;
     font-size: xx-large;
     position: relative;
     top: 120px;  
 }
-@keyframes movementcyan {
+@keyframes movementorange {
     0% {
-        box-shadow: 0px 0px 10px 5px cyan; 
+        box-shadow: 0px 0px 10px 5px orange; 
     }
     25% {
-        box-shadow: 5px -5px 10px 5px cyan;
+        box-shadow: 5px -5px 10px 5px orange;
     }
     50% {
-        box-shadow: 0px 0px 10px 5px cyan;
+        box-shadow: 0px 0px 10px 5px orange;
     }
     75% {
-        box-shadow: -5px 5px 10px 5px cyan; 
+        box-shadow: -5px 5px 10px 5px orange; 
     }
     100% {
-        box-shadow: 0px 0px 10px 5px cyan; 
+        box-shadow: 0px 0px 10px 5px orange; 
     }
 }
 .text-border {
-    border: 3px solid cyan;
+    border: 3px solid orange;
     padding: 5px;
     border-radius: 10px;
-    animation: movementcyan 3s infinite ease-in-out;
+    animation: movementorange 3s infinite ease-in-out;
 }
 .aboutme-section{
     height: 100vh;
@@ -315,7 +320,7 @@ input:checked + .slider:before {
 .aboutme-section > .poster > img{
     position: relative;
     top: 20px;
-    animation: movementcyan 2s infinite linear;
+    animation: movementorange 2s infinite linear;
     border-radius: 50%;
     width: 500px;
     height: 500px;
@@ -340,8 +345,8 @@ input:checked + .slider:before {
     }
 }
 .aboutme-section > .aboutme-text {
-    border: 2px solid cyan;
-    animation: movementcyan 7s infinite linear;
+    border: 2px solid orange;
+    animation: movementorange 7s infinite linear;
     filter: brightness(0.8);
     display: flex;
     flex-direction: column; 
@@ -351,7 +356,7 @@ input:checked + .slider:before {
     color: beige;
 }
 .aboutme-section > .aboutme-text > h1{
-    color: cyan; 
+    color: orange; 
     font-style: bold;
     font-size: x-large;
 }
@@ -374,7 +379,7 @@ input:checked + .slider:before {
     position: relative;
 }
 .third-page .header{
-    color: cyan;
+    color: orange;
     text-align: center;
     font-weight: bolder;
     font-size: xx-large;
@@ -385,7 +390,7 @@ input:checked + .slider:before {
     border: 3px solid black;
     padding: 5px;
     border-radius: 10px;
-    animation: movementcyan 3s infinite ease-in-out;
+    animation: movementorange 3s infinite ease-in-out;
 }
 .skills{
     display: flex;
@@ -396,7 +401,7 @@ input:checked + .slider:before {
 .skill-container{
     position: absolute;
     top:300px;
-    color:cyan;
+    color:orange;
     border: 1px grey solid; 
     animation: movement 19s infinite linear; 
     height: 500px;
@@ -410,7 +415,7 @@ input:checked + .slider:before {
 }
 .skill-container:hover{
     transform: scale(1.3);
-    color: cyan;
+    color: orange;
 
 }
 .skill-container .outer{
@@ -484,7 +489,7 @@ input:checked + .slider:before {
     }
     100%{
         width: 100%;
-        background-color: green;
+        background-color: orange;
     }
 }
 
@@ -492,7 +497,6 @@ input:checked + .slider:before {
 
 .Certificates{
     display: grid;
-    background-color: black;
     color: white;
     grid-template-columns: repeat(6,1fr);
     /* margin-top: 20px; */
@@ -503,7 +507,7 @@ input:checked + .slider:before {
     margin: 50px 10px 20px 15px;
     width: auto;
     height: auto;
-    border: 1px solid cyan;
+    border: 1px solid orange;
     border-radius: 9px;
     display: flex;
     flex-direction: column;
@@ -512,17 +516,17 @@ input:checked + .slider:before {
 }
 
 .Certificates .box button{
-    border: 1px solid cyan ;
+    border: 1px solid orange ;
     border-radius: 999px;
     margin-bottom: 10px;
     padding: 5px;
 }
 .Certificates .box button:hover{
-    box-shadow: 0 0 5px 5px cyan;
+    box-shadow: 0 0 5px 5px orange;
 }
 .Certificates .box:hover{
     padding: 2px;
-    box-shadow: 0 0 5px 5px cyan;
+    box-shadow: 0 0 5px 5px orange;
     scale: 1;
     overflow: hidden;
     transform: translateX(30px);
@@ -540,23 +544,21 @@ input:checked + .slider:before {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: cyan; 
+    background-color: orange; 
     border-radius: 6px; 
     border: 3px solid black; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: darkcyan; 
+    background-color: darkorange; 
 }
 
 /* ------------------------------------------------------------------------------------------ */
 
 /* Fourth Page */
-#fourth-page{
-    background-color: black;
-}
+
 #fourth-page > .header{
-    color: cyan;
+    color: orange;
     text-align: center;
     font-weight: bolder;
     font-size: xx-large;
@@ -570,10 +572,9 @@ input:checked + .slider:before {
     position: relative;
     display: flex;
     align-items: center;
-    background-color: black;
 }
 .fourth-page > .header{
-    color: cyan;
+    color: rgb(159, 144, 59);
 }
 .fourth-page .box-holder{
     width: 90%;
@@ -592,17 +593,17 @@ input:checked + .slider:before {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(37, 36, 36);
-    color: darkgray;
+    /* background-color: rgb(37, 36, 36); */
+    color: white;
 }
 .fourth-page .box-holder .service-box:hover{
     transform: translateY(-70px);
-    animation: movementcyan 3s linear infinite;
+    animation: movementorange 3s linear infinite;
 }
 .fourth-page .box-holder .service-box > h1{
     font-size: xx-large;
     font-weight: 800;
-    color: cyan;
+    color: orange;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .fourth-page .box-holder .service-box > p{
@@ -612,9 +613,9 @@ input:checked + .slider:before {
     color: white;
 }
 .fourth-page .box-holder .service-box > a{
-    border: 1px solid cyan;
+    border: 1px solid orange;
     background-color: gray;
-    color: cyan;
+    color: orange;
 
     padding: 5px;
     border-radius: 10px;
@@ -631,7 +632,7 @@ input:checked + .slider:before {
 }
 
 .fifth-page > .header{
-    color: cyan;
+    color: orange;
     text-align: center;
     font-weight: bolder;
     font-size: xx-large;
@@ -640,7 +641,7 @@ input:checked + .slider:before {
     z-index: 1; 
 }
 .fifth-page > .projects-holder{
-    /* border: 1px solid red; */
+    /* border: 1px solid orange; */
     width: 100dvw;
     margin-left: auto;
     margin-right: auto;
@@ -663,7 +664,7 @@ input:checked + .slider:before {
 }
 /* Hover Effect */
 .fifth-page > .projects-holder > .projects:hover{
-    animation: movementcyan 3s linear infinite;
+    animation: movementorange 3s linear infinite;
 }
 /* hover Effect */
 .fifth-page > .projects-holder > .projects:hover div{
@@ -682,8 +683,8 @@ input:checked + .slider:before {
 .fifth-page > .projects-holder > .projects > div{
     display: flex;
     justify-content: center;
-    color: cyan;
-    background-color: cyan ;
+    color: orange;
+    background-color: orange ;
     align-self: start;
     position: relative;
     top: 500px;
@@ -701,7 +702,7 @@ input:checked + .slider:before {
     font-size: x-large;
     margin-bottom: 20px;
     text-align: center;
-    color: cyan;
+    color: orange;
 }
 .fifth-page > .projects-holder > .projects > .content > p{
     margin-left: 10px;
@@ -723,8 +724,8 @@ input:checked + .slider:before {
 .contact-section{
     width: 100vw;
     height: 100vh;
-    background-color: black;
-    color: cyan;
+    /* background-color: black; */
+    color: orange;
     position: relative;
     top: 300px;
     display: flex;
@@ -733,7 +734,7 @@ input:checked + .slider:before {
     align-items:center ;
 }
 .contact-section > .header{
-    color: cyan;
+    color: orange;
     text-align: center;
     font-weight: bolder;
     font-size: xx-large;
@@ -742,15 +743,15 @@ input:checked + .slider:before {
     z-index: 1;
 }
 .contact-section .contact{
-    border: 1px solid cyan;
+    border: 1px solid orange;
     border-radius: 10px;
-    background-color: rgb(37, 36, 36);
-    animation: movementcyan 3s infinite linear;
+    /* background-color: rgb(37, 36, 36); */
+    animation: movementorange 3s infinite linear;
     padding: 30px;
 }
 .contact-section .contact .form input{
     background-color: transparent;
-    border: 1px solid cyan;
+    border: 1px solid orange;
     border-radius: 10px;
 }
 
@@ -764,9 +765,12 @@ input:checked + .slider:before {
 }
 #submit:hover{
     transform: scale(1.2);
-    animation: movementcyan 3s infinite linear;
+    animation: movementorange 3s infinite linear;
 }
-
+#message{
+    margin-top: 5px;
+    color: black;
+}
 /* ------------------------------------------------------------------------------------------ */
 
 /* Footer Section  */
@@ -778,7 +782,7 @@ footer{
     width: 100dvw;
     height: fit-content;
     background-color: rgb(61, 60, 60);
-    color: cyan;
+    color: orange;
 }
 footer > .logo{
     display: flex;
@@ -882,6 +886,5 @@ footer > .logo > .fa:hover + i{
     }
 
 }
-
 
  
